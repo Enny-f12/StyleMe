@@ -19,6 +19,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
+    { name: 'About', href: '/about' },
     { name: 'Features', href: '/feature' },
     { name: 'How it Works', href: '/how-it-works' },
     { name: 'For Stylist', href: '/for-stylist' },
@@ -48,7 +49,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-12">
+          <div className="hidden lg:flex items-center gap-12">
             {navLinks.map((item) => (
               <Link 
                 key={item.name} 
@@ -67,7 +68,7 @@ const Navbar = () => {
 
           {/* Mobile Toggle Button */}
           <button 
-            className="md:hidden text-secondary-foreground z-50"
+            className="lg:hidden text-secondary-foreground z-50"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -82,7 +83,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="absolute top-full left-0 w-full bg-secondary border-b border-white/5 flex flex-col items-left py-10 pl-8 gap-8 md:hidden shadow-2xl"
+              className="absolute top-full left-0 w-full bg-secondary border-b border-white/5 flex flex-col items-left py-10 pl-8 gap-8 lg:hidden shadow-2xl"
             >
               {navLinks.map((item) => (
                 <Link 
@@ -97,7 +98,7 @@ const Navbar = () => {
               <Link href="/waitlist" onClick={() => setIsMenuOpen(false)}>
               <Button 
                 variant="primary" 
-                className="py-4 px-10 text-[12px]! w-[80%] text-[#854D0E]!"
+                className="py-4 px-10 text-[12px]! w-[80%] md:w-[30%] text-[#854D0E]!"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Started

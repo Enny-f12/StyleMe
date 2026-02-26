@@ -6,7 +6,7 @@ const StylistProSection = () => {
   return (
     <div className="bg-background text-foreground flex flex-col">
       {/* Hero */}
-      <section className="px-6 py-16 mt-20 md:px-12 lg:px-24 max-w-4xl mx-auto text-center md:text-left">
+      <section className="px-6 py-16 mt-20 md:px-12 lg:px-24 max-w-5xl mx-auto text-center md:text-left">
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary-foreground px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-8 border border-primary/20">
           <span>✨ For Professional Stylists</span>
         </div>
@@ -31,7 +31,7 @@ const StylistProSection = () => {
       </section>
 
       {/* Stats Cards */}
-      <section className="px-6 grid grid-cols-2 gap-4 max-w-4xl mx-auto mb-20 w-full">
+      <section className="px-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto mb-20 w-full">
         <div className="bg-white p-8 rounded-4xl border border-foreground/5 text-center shadow-sm">
           <span className="text-4xl font-bold text-primary block mb-2">10X</span>
           <span className="text-[10px] uppercase font-bold tracking-widest text-foreground/40">Efficiency</span>
@@ -45,23 +45,23 @@ const StylistProSection = () => {
       {/* Built for Professionals */}
       <section className="px-6 py-20 bg-white">
         <h2 className="text-3xl font-bold font-montserrat text-center mb-16">Built for Professionals</h2>
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-5xl mx-auto space-y-12">
           {/* Feature 1 */}
-          <div className="bg-background p-8 rounded-[2.5rem] border border-foreground/5">
+          <div className="bg-background p-4 py-8 md:p-8 rounded-[2.5rem] border border-foreground/5">
             <Users className="text-primary mb-6" size={32} />
             <h3 className="text-2xl font-bold mb-4 font-montserrat">Client Management</h3>
             <p className="text-foreground/60 mb-8 leading-relaxed">Manage unlimited client wardrobes and style profiles from one unified dashboard.</p>
-            <div className="relative aspect-video rounded-2xl overflow-hidden">
+            <div className="relative aspect-8/6 rounded-2xl overflow-hidden">
               <Image src="/image/Rectangle 7.png" alt="Dashboard" fill className="object-cover" />
             </div>
           </div>
 
           {/* Feature 2 */}
-          <div className="bg-background p-8 rounded-[2.5rem] border border-foreground/5">
+          <div className="bg-background p-4 py-8  md:p-8 rounded-[2.5rem] border border-foreground/5">
             <Sparkles className="text-primary mb-6" size={32} />
             <h3 className="text-2xl font-bold mb-4 font-montserrat">AI-Assisted Lookbooks</h3>
             <p className="text-foreground/60 mb-8 leading-relaxed">Let our engine suggest base pairings based on your client&apos;s body type and preferences.</p>
-            <div className="relative aspect-square max-w-md mx-auto rounded-full overflow-hidden border-8 border-white shadow-xl">
+            <div className="relative aspect-8/6 max-w-md mx-auto rounded-full overflow-hidden border-8 border-white shadow-xl">
               <Image src="/image/Rectangle 7.png" alt="Lookbook" fill className="object-cover" />
             </div>
           </div>
@@ -71,6 +71,7 @@ const StylistProSection = () => {
       {/* Testimonial Section */}
       <section className="py-24 px-6 bg-secondary text-secondary-foreground">
         <div className="max-w-2xl mx-auto text-center">
+          
           <div className="relative w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden border-4 border-primary">
             <Image src="/image/Rectangle 7.png" alt="Stylist" fill className="object-cover" />
           </div>

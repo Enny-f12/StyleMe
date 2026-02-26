@@ -7,7 +7,7 @@ const StyleMeAIVision = () => {
   return (
     <div className="flex flex-col bg-background text-foreground">
       {/* 1. Hero Section */}
-      <section className="px-6 py-16 md:px-12 lg:px-24 max-w-4xl mx-auto mt-20 text-center md:text-left">
+      <section className="px-6 py-16 md:px-12 lg:px-24 max-w-6xl mx-auto mt-20 text-center md:text-left">
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary-foreground px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-8 border border-primary/20">
           <span>⚡ Next Gen Styling</span>
         </div>
@@ -23,13 +23,13 @@ const StyleMeAIVision = () => {
         </p>
       </section>
 
-      <h2 className='text-primary-foreground text-3xl mx-auto mb-10 text-center'>Let&#39;s dive in to our amazing features<ArrowBigDown size={24} className="mt-4  mx-auto" /></h2>
+      <h2 className='text-foreground text-2xl md:text-3xl mx-auto mb-10 text-center'>Let&#39;s dive in to our amazing features<ArrowBigDown size={24} className="mt-4  mx-auto" /></h2>
 
       {/* 2. Feature Cards Grid */}
-      <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-5xl mx-auto space-y-6">
+      <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-6xl mx-auto space-y-6">
 
         {/* Instant Digitization - Large Card */}
-        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm">
+        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
           <div className="flex justify-between items-start mb-8">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/20">
               <Camera className="text-primary-foreground" size={28} />
@@ -42,7 +42,7 @@ const StyleMeAIVision = () => {
             Snap a photo of your closet. Our AI automatically categorizes fabric, cut, and color in under 60 seconds. It builds a high-definition digital twin of your entire collection so you can browse your clothes like a premium storefront.
           </p>
 
-          <div className="relative rounded-3xl overflow-hidden aspect-video group">
+          <div className="relative rounded-3xl overflow-hidden aspect-8/6 group">
             <Image
               src="https://i.pinimg.com/736x/b0/c0/c7/b0c0c7fdb34bc1493bb102549817f104.jpg"
               alt="AI scanning wardrobe"
@@ -59,7 +59,7 @@ const StyleMeAIVision = () => {
         </div>
 
         {/* Archetype Styling - Medium Card */}
-        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm">
+        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
           <div className="flex justify-between items-start mb-8">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
               <Ruler className="text-primary" size={28} />
@@ -79,7 +79,7 @@ const StyleMeAIVision = () => {
         </div>
 
         {/* Fabric Intelligence - Medium Card */}
-        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm">
+        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
           <div className="flex justify-between items-start mb-8">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
               <Search className="text-primary" size={28} />
@@ -108,7 +108,7 @@ const StyleMeAIVision = () => {
         </div>
 
         {/* Aesthetic Discovery - Medium Card */}
-        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm">
+        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
           <div className="flex justify-between items-start mb-8">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
               <Sparkles className="text-primary" size={28} />
@@ -143,7 +143,7 @@ const StyleMeAIVision = () => {
         </div>
          
         {/* Share & Collaborate - Medium Card */}
-        <div className=" border border-foreground/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm">
+        <div className=" border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
           <div className="flex justify-between items-start mb-8">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
               <Users className="text-primary" size={28} />
@@ -163,7 +163,7 @@ const StyleMeAIVision = () => {
         </div>
 
         {/* Vibe-Based Styling - Medium Card */}
-        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm">
+        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
           <div className="flex justify-between items-start mb-8">
             <div className="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center">
               <Sparkles className="text-primary" size={28} />
@@ -178,7 +178,7 @@ const StyleMeAIVision = () => {
 
         {/* Small Cards Row */}
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-8 shadow-sm">
+          <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8  md:p-8 shadow-sm">
             <div className="w-12 h-12 bg-foreground/5 rounded-xl flex items-center justify-center mb-6">
               <Thermometer className="text-primary" size={24} />
             </div>
@@ -186,7 +186,7 @@ const StyleMeAIVision = () => {
             <p className="text-foreground/50 text-sm">Automated layering suggestions. Never get caught in a sudden rain shower or overheat during your commute again.</p>
           </div>
 
-          <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-8 shadow-sm">
+          <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8  md:p-8 shadow-sm">
             <div className="w-12 h-12 bg-foreground/5 rounded-xl flex items-center justify-center mb-6">
               <Calendar className="text-primary" size={24} />
             </div>

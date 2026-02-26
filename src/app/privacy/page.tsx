@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
 
   return (
     <main className="min-h-screen bg-background text-foreground px-6 py-20 md:px-12 lg:px-24">
-      <div className="max-w-4xl mx-auto mt-20">
+      <div className="max-w-5xl mx-auto mt-20">
         <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-6">
           Privacy <span className="text-primary italic">Policy</span>
         </h1>

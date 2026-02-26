@@ -74,8 +74,8 @@ const Footer = () => {
       <div className="border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-montserrat uppercase tracking-[0.3em] font-bold opacity-30">
         <p className="text-center md:text-left">&copy; {currentYear} STYLE ME. ALL RIGHTS RESERVED.</p>
         <div className="flex gap-10">
-          <Link href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
-          <Link href="#" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
+          <Link href="/privacy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
+          <Link href="/terms" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
         </div>
       </div>
     </footer>

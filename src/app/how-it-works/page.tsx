@@ -30,7 +30,7 @@ const StylingProcess = () => {
   return (
     <div className="bg-background py-16 px-6 md:px-12 lg:px-24">
       {/* Header */}
-      <div className="max-w-4xl mx-auto mb-16 text-left mt-20">
+      <div className="max-w-5xl mx-auto mb-16 text-left mt-20">
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary-foreground px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 border border-primary/20">
           <span>✨ The Styling Process</span>
         </div>
@@ -43,7 +43,7 @@ const StylingProcess = () => {
       </div>
 
       {/* Steps Container */}
-      <div className="max-w-3xl mx-auto space-y-24 relative">
+      <div className="max-w-5xl mx-auto space-y-24 relative">
         {/* Connecting Line (Desktop) */}
         <div className="absolute left-6 top-10 bottom-10 w-0.5 bg-primary/10 hidden md:block" />
 
@@ -59,7 +59,7 @@ const StylingProcess = () => {
               <p className="text-foreground/60 mb-8 leading-relaxed max-w-lg">{step.description}</p>
               
               <div className="relative rounded-4xl overflow-hidden border border-foreground/5 bg-white shadow-xl">
-                <div className="relative aspect-4/3 w-full">
+                <div className="relative aspect-8/6 w-full">
                    <Image 
                     src={step.image} 
                     alt={step.title} 
@@ -78,7 +78,7 @@ const StylingProcess = () => {
                         <span className="bg-primary/20 text-primary-foreground text-[8px] px-2 py-1 rounded font-bold uppercase">Fit: Oversized</span>
                       </div>
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-slate-100 rounded-xl relative overflow-hidden">
+                        <div className="w-12 h-12 bg-slate-100 rounded-xl relative overflow-hidden aspect-8/6">
                            <Image src="/image/Rectangle 7.png" alt="item" fill className="object-cover" />
                         </div>
                         <div className="flex-1">

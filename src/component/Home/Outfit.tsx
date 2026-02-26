@@ -28,7 +28,7 @@ const OutfitSection = () => {
     return (
         <section className="px-6 lg:px-20 py-16 md:py-24 bg-secondary overflow-hidden">
             <motion.div 
-                className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -48,7 +48,7 @@ const OutfitSection = () => {
                 </motion.div>
 
                 {/* Row 1 / Card 1 */}
-                <motion.div variants={itemVariants} className="p-0 md:p-8 h-120">
+                <motion.div variants={itemVariants} className="p-0 lg:p-8 h-80 lg:h-120">
                     <FeatureCard
                         isDark
                         icon={Smile}
@@ -64,12 +64,12 @@ const OutfitSection = () => {
                         alt="Weather Outfit"
                         width={600}
                         height={500}
-                        className="w-full h-120 object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-80 lg:h-120 object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                 </motion.div>
 
                 {/* Row 2 / Card 2 */}
-                <motion.div variants={itemVariants} className="p-0 md:p-8 h-120">
+                <motion.div variants={itemVariants} className="p-0 lg:p-8 h-80 lg:h-120">
                     <FeatureCard
                         isDark
                         icon={CloudRain}
@@ -85,12 +85,12 @@ const OutfitSection = () => {
                         alt="Weather Outfit"
                         width={600}
                         height={500}
-                        className="w-full h-120 object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-80 lg:h-120 object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                 </motion.div>
 
                 {/* Row 2 / Card 3 */}
-                <motion.div variants={itemVariants} className="p-0 md:p-8 h-120">
+                <motion.div variants={itemVariants} className="p-0 lg:p-8 h-80 lg:h-120">
                     <FeatureCard
                         isDark
                         icon={Calendar}

@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 export default function ComingSoon() {
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-6 py-20">
-      <div className="max-w-2xl w-full text-center mt-20">
+    <div className="min-h-screen bg-background flex flex-col items-center justify-center mt-15 px-6 py-20">
+      <div className="max-w-2xl w-full text-center ">
         {/* Status Badge */}
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary-foreground px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-8 border border-primary/20 animate-pulse">
           <Clock size={14} /> 
@@ -24,7 +24,7 @@ export default function ComingSoon() {
         </p>
 
         {/* Visual Preview */}
-        <div className="relative aspect-video rounded-[2.5rem] overflow-hidden border border-foreground/5 shadow-2xl mb-12 group">
+        <div className="relative aspect-8/6 rounded-[2.5rem] overflow-hidden border border-foreground/5 shadow-2xl mb-12 group">
           <Image 
             src="/image/Rectangle 7.png" 
             alt="Marketplace Preview" 
@@ -40,7 +40,7 @@ export default function ComingSoon() {
         </div>
 
         {/* Subscription / Waitlist Mini-form */}
-        <div className="max-w-60 mx-auto">
+        <div className="max-w-55 mx-auto">
           <Link 
         href="/waitlist"
         className="group flex items-center gap-3 bg-primary text-primary-foreground font-bold px-8 py-4 rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-[1.02] active:scale-95"

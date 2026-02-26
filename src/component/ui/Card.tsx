@@ -12,7 +12,7 @@ const FeatureCard = ({ title, description, icon: Icon, isDark = false }: Feature
   return (
     <div className={`
       group relative overflow-hidden transition-all duration-500 h-full flex flex-col 
-      rounded-2xl p-5 md:p-10 
+      rounded-2xl p-5 md:p-8 lg:p-10
       ${isDark 
         ? 'bg-[#292516] text-secondary-foreground border border-white/5 shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:border-primary/30' 
         : 'bg-white text-[#231E0F] border border-[#231E0F]/10 shadow-sm hover:shadow-md'
@@ -21,7 +21,7 @@ const FeatureCard = ({ title, description, icon: Icon, isDark = false }: Feature
       
       {/* Icon Section - Uses your Yellow (#FACC15) */}
       {Icon && (
-        <div className="mb-8 md:mb-14">
+        <div className="mb-8 md:mb-8 ">
           <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary transition-all duration-500 group-hover:bg-primary group-hover:text-[#854D0E]">
             <Icon size={28} strokeWidth={1.5} />
           </div>
