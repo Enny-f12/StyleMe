@@ -72,7 +72,7 @@ const Hero = () => {
             >
                 <div className="relative w-full aspect-4/5 lg:aspect-square overflow-hidden rounded-sm shadow-2xl">
                     <Image
-                        src="https://i.pinimg.com/736x/fa/65/7c/fa657c26852b652b896e245a2d278a82.jpg"
+                        src="https://i.pinimg.com/736x/ea/c5/9f/eac59f03047a3d49282af65fb9c54dac.jpg"
                         alt="Wardrobe Selection"
                         fill
                         priority
@@ -88,7 +88,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.2, duration: 0.8 }}
                 >
-                    <GlassCard label="Linen Shirts" imageSrc="https://i.pinimg.com/1200x/72/d0/5a/72d05a5540614aad95644ffcdac1039f.jpg" />
+                    <GlassCard label="Linen Shirts" imageSrc="https://i.pinimg.com/736x/ea/c5/9f/eac59f03047a3d49282af65fb9c54dac.jpg" />
                 </motion.div>
             </motion.div>
         </section>

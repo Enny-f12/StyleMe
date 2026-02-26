@@ -10,21 +10,21 @@ const StyleMeLanding = () => {
         <div className="inline-flex items-center gap-2 bg-primary/20 text-primary-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
           <span>⚡ New Era of Fashion</span>
         </div>
-        
+
         <h1 className="text-5xl md:text-7xl leading-tight mb-6 text-foreground">
           Join the <span className="text-primary italic">Future</span> of Fashion
         </h1>
-        
+
         <p className="text-lg text-foreground/70 mb-10 leading-relaxed max-w-5xl">
-          Experience the world&#39;s first AI stylist that lives in your pocket. 
+          Experience the world&#39;s first AI stylist that lives in your pocket.
           Digitizing your wardrobe in seconds and curating looks for every vibe.
         </p>
 
         {/* Featured Image / Card */}
         <div className="relative rounded-3xl overflow-hidden aspect-8/6 md:aspect-video mb-12 shadow-2xl">
-          <Image 
-            src="/image/Rectangle 1.png" 
-            alt="Minimalist wardrobe" 
+          <Image
+            src="https://i.pinimg.com/736x/46/31/c5/4631c5e94eb5ae95a91b6f78b394cffc.jpg"
+            alt="Minimalist wardrobe"
             className="object-cover w-full h-full"
             fill
             priority
@@ -46,8 +46,8 @@ const StyleMeLanding = () => {
         {/* Waitlist Form */}
         <div className="max-w-5xl mx-auto md:mx-0">
           <div className="flex flex-col md:flex-row gap-3 mb-6">
-            <input 
-              type="email" 
+            <input
+              type="email"
               placeholder="Enter your email address"
               className=" w-full md:w-3/4 px-6 py-4 rounded-xl border border-foreground/10 bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
             />
@@ -57,19 +57,34 @@ const StyleMeLanding = () => {
           </div>
 
           {/* Social Proof */}
-          <div className="flex flex-col items-center md:items-start gap-3">
-            <div className="flex -space-x-3">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="w-10 h-10 rounded-full border-2 border-background bg-slate-200 overflow-hidden">
-                  <Image src={`/image/Rectangle 7.png${i}`} alt="user" width={40} height={40} />
+          <div className="flex flex-col items-center md:items-start gap-4">
+            <div className="flex -space-x-3 items-center">
+              {[
+                "https://i.pinimg.com/736x/92/24/eb/9224eb869902b64ca066f5b62b682e2f.jpg",
+                "https://i.pinimg.com/736x/b0/c0/c7/b0c0c7fdb34bc1493bb102549817f104.jpg",
+                "https://i.pinimg.com/736x/ce/49/39/ce4939e9d698ecc881e50241a83a2fb9.jpg"
+              ].map((src, i) => (
+                <div
+                  key={i}
+                  className="w-10 h-10 rounded-full border-2 border-background bg-slate-100 overflow-hidden shadow-sm"
+                >
+                  <Image
+                    src={src}
+                    alt={`User ${i + 1}`}
+                    width={40}
+                    height={40}
+                    className="object-cover h-full w-full"
+                  />
                 </div>
               ))}
-              <div className="w-10 h-10 rounded-full border-2 border-background bg-primary flex items-center justify-center text-[10px] font-bold text-primary-foreground">
-                +5k
+              <div className="w-10 h-10 rounded-full border-2 border-background bg-primary flex items-center justify-center text-[10px] font-black text-primary-foreground shadow-sm z-10">
+                +5K
               </div>
             </div>
-            <p className="text-sm text-foreground/60">
-              Join <span className="font-bold text-foreground">5,000+ others</span> waiting for the future.
+
+            <p className="text-sm text-foreground/60 leading-relaxed">
+              Join <span className="font-bold text-foreground">5,000+ stylists & creators</span> <br className="hidden md:block" />
+              securing their spot in the fashion revolution.
             </p>
           </div>
         </div>

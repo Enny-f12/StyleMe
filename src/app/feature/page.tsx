@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Camera, Sparkles, Thermometer, Calendar, ArrowRight, ArrowBigDown, Users, Ruler, Search } from 'lucide-react';
+import { Camera, Sparkles, Thermometer, Calendar, ArrowRight, Users, Ruler, Search } from 'lucide-react';
 import Link from 'next/link';
 
 const StyleMeAIVision = () => {
@@ -23,36 +23,52 @@ const StyleMeAIVision = () => {
         </p>
       </section>
 
-      
+
       {/* 2. Feature Cards Grid */}
       <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-6xl mx-auto space-y-6">
 
-        {/* Instant Digitization - Large Card */}
+        {/* Instant Digitization & Discovery - Large Card */}
         <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
           <div className="flex justify-between items-start mb-8">
-            <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/20">
-              <Camera className="text-primary-foreground" size={28} />
+            <div className="flex gap-3">
+              {/* Snap Icon */}
+              <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/20">
+                <Camera className="text-primary-foreground" size={28} />
+              </div>
+              {/* Search Icon */}
+              <div className="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center shadow-lg shadow-secondary/20">
+                <Search className="text-secondary-foreground" size={28} />
+              </div>
             </div>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-foreground/40">AI Vision</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-foreground/40">AI Vision + Search</span>
           </div>
 
-          <h3 className="text-3xl font-bold mb-4">Instant Digitization</h3>
+          <h3 className="text-3xl font-bold mb-4">Snap or Search Your Style</h3>
           <p className="text-foreground/60 mb-8 max-w-3xl">
-            Snap a photo of your closet. Our AI automatically categorizes fabric, cut, and color in under 60 seconds. It builds a high-definition digital twin of your entire collection so you can browse your clothes like a premium storefront.
+            Digitize your own closet or discover missing pieces. Snap a photo to create high-definition digital twins,
+            or search our global database for similar items to add to your virtual wardrobe instantly.
           </p>
 
           <div className="relative rounded-3xl overflow-hidden aspect-8/6 group">
             <Image
               src="https://i.pinimg.com/736x/b0/c0/c7/b0c0c7fdb34bc1493bb102549817f104.jpg"
-              alt="AI scanning wardrobe"
+              alt="AI scanning and searching wardrobe"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 border border-primary/20 shadow-xl">
-              <div className="w-4 h-4 bg-primary rounded-full flex items-center justify-center">
+
+            {/* Dynamic Tag 1: Recognition */}
+            <div className="absolute bottom-16 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 border border-primary/20 shadow-xl">
+              <div className="w-4 h-4 bg-primary rounded-full flex items-center justify-center animate-pulse">
                 <div className="w-2 h-2 bg-primary-foreground rounded-full" />
               </div>
-              <span className="text-xs font-bold text-foreground">Cotton Shirt Recognized</span>
+              <span className="text-xs font-bold text-foreground">Cotton Shirt Digitized</span>
+            </div>
+
+            {/* Dynamic Tag 2: Search/Similar Item */}
+            <div className="absolute bottom-4 left-10 bg-secondary/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 border border-secondary/20 shadow-xl">
+              <Search size={14} className="text-secondary-foreground" />
+              <span className="text-xs font-bold text-foreground">Found 12 Similar Items</span>
             </div>
           </div>
         </div>
@@ -70,39 +86,42 @@ const StyleMeAIVision = () => {
             Whether you fall into female bodytypes like <span className="text-foreground font-semibold italic">Hourglass, Pear, or Apple</span>, or male bodytypes like <span className="text-foreground font-semibold italic">Inverted Triangle, Trapezoid, or Rectangle</span>, our AI suggests cuts that enhance your natural silhouette. No more guessing just perfectly balanced proportions.
           </p>
           <div className="relative rounded-3xl overflow-hidden aspect-8/6 bg-slate-50 border border-foreground/5">
-             <Image src="https://i.pinimg.com/736x/6d/e0/9d/6de09d33e7062e1251aa69d12c4d3f72.jpg" alt="archetypes" fill className="object-cover opacity-80" />
-             <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/40 italic"></p>
-             </div>
+            <Image src="https://i.pinimg.com/736x/6d/e0/9d/6de09d33e7062e1251aa69d12c4d3f72.jpg" alt="archetypes" fill className="object-cover opacity-80" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/40 italic"></p>
+            </div>
           </div>
         </div>
 
         {/* Fabric Intelligence - Medium Card */}
-        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
+        <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm h-full flex flex-col">
           <div className="flex justify-between items-start mb-8">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
               <Search className="text-primary" size={28} />
             </div>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-foreground/40">Fabric ID</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-foreground/40">Dormant Item Unlock</span>
           </div>
+
           <h3 className="text-3xl font-bold mb-4">The &quot;Style This&quot; Lens</h3>
           <p className="text-foreground/60 leading-relaxed mb-8">
-            Found a vintage piece with a fabric you don&apos;t recognize? Simply scan the texture. Our AI identifies complex materials—from <span className="text-foreground font-semibold italic">Heavyweight Herringbone</span> to <span className="text-foreground font-semibold italic">Raw Japanese Denim</span>—and provides instant suggestions on how to clean, drape, and pair it with items already in your closet.
+            Have a dormant clothe piece you never wear? Scan the texture. Our AI identifies materials like <span className="text-foreground font-semibold italic">Heavyweight Herringbone</span> and suggests immediate pairings using <span className="text-primary font-semibold">items already in your closet</span> to bring that piece back to life.
           </p>
-          
-          <div className="relative rounded-3xl overflow-hidden aspect-8/6 bg-slate-50 border border-foreground/5 group">
-             <Image 
-                src="https://i.pinimg.com/1200x/53/25/4b/53254b30e065e4d450923fc01b6c49c5.jpg" 
-                alt="Fabric texture recognition" 
-                fill 
-                className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
-             />
-             <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/20 shadow-xl flex items-center gap-3">
-                   <div className="w-2 h-2 bg-primary rounded-full animate-ping" />
-                   <p className="text-[10px] uppercase tracking-widest font-bold text-foreground">Analyzing...</p>
-                </div>
-             </div>
+
+          <div className="relative rounded-3xl overflow-hidden aspect-8/6 bg-slate-50 border border-foreground/5 group mt-auto">
+            <Image
+              src="https://i.pinimg.com/1200x/53/25/4b/53254b30e065e4d450923fc01b6c49c5.jpg"
+              alt="Fabric texture recognition"
+              fill
+              className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+            />
+
+            {/* Analysis Overlay */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
+              <div className="bg-white/80 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/20 shadow-xl flex items-center gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full animate-ping" />
+                <p className="text-[10px] uppercase tracking-widest font-bold text-foreground">Matching piece with your Closet...</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -118,7 +137,7 @@ const StyleMeAIVision = () => {
           <p className="text-foreground/60 leading-relaxed mb-8">
             Not sure what your &quot;vibe&quot; is called? Use our aesthetic search to explore curated styles. Whether you&apos;re leaning towards the quiet luxury of <span className="text-foreground font-semibold italic">Old Money</span>, the edgy subculture of <span className="text-foreground font-semibold italic">Alte</span>, or the structured clean-lines of <span className="text-foreground font-semibold italic">Streetwear</span>, our AI maps your current wardrobe against these global aesthetics to show you exactly how to pull off the look.
           </p>
-          
+
           {/* Aesthetic Tags Display */}
           <div className="flex flex-wrap gap-2 mb-8">
             {['Old Money', 'Alte', 'Y2K', 'Coquette', 'Minimalist', 'Gorpcore'].map((tag) => (
@@ -129,18 +148,18 @@ const StyleMeAIVision = () => {
           </div>
 
           <div className="relative rounded-3xl overflow-hidden aspect-8/6 bg-slate-50 border border-foreground/5">
-             <Image 
-                src="https://i.pinimg.com/736x/0d/34/48/0d34483a6717ceb6c8aed61ea3979b0f.jpg" 
-                alt="Aesthetic style search" 
-                fill 
-                className="object-cover" 
-             />
-             <div className="absolute inset-0 bg-linear-to-t from-white/80 to-transparent flex items-end p-6">
-                <p className="text-[10px] uppercase tracking-widest font-bold text-foreground">Analyzing closet for: <span className="text-primary italic">Alte Aesthetic</span></p>
-             </div>
+            <Image
+              src="https://i.pinimg.com/736x/0d/34/48/0d34483a6717ceb6c8aed61ea3979b0f.jpg"
+              alt="Aesthetic style search"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-linear-to-t from-white/80 to-transparent flex items-end p-6">
+              <p className="text-[10px] uppercase tracking-widest font-bold text-foreground">Analyzing closet for: <span className="text-primary italic">Alte Aesthetic</span></p>
+            </div>
           </div>
         </div>
-         
+
         {/* Share & Collaborate - Medium Card */}
         <div className=" border border-foreground/5 rounded-[2.5rem] p-4 py-8 md:py-12 md:p-12 shadow-sm">
           <div className="flex justify-between items-start mb-8">
@@ -154,10 +173,10 @@ const StyleMeAIVision = () => {
             Styling shouldn&apos;t be a lonely process. Securely share your digital wardrobe with professional stylists for a virtual audit, or with friends to get instant feedback on your weekend looks. Collaboration is just one tap away.
           </p>
           <div className="relative rounded-3xl overflow-hidden aspect-8/6 border border-foreground/5">
-             <Image src="https://i.pinimg.com/1200x/3a/c3/43/3ac343457f214681260221bea0e8fb3a.jpg" alt="sharing" fill className="object-cover" />
-             <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/40 italic"></p>
-             </div>
+            <Image src="https://i.pinimg.com/1200x/3a/c3/43/3ac343457f214681260221bea0e8fb3a.jpg" alt="sharing" fill className="object-cover" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/40 italic"></p>
+            </div>
           </div>
         </div>
 
@@ -182,7 +201,7 @@ const StyleMeAIVision = () => {
               <Thermometer className="text-primary" size={24} />
             </div>
             <h4 className="text-xl font-bold mb-2">Weather Sync</h4>
-            <p className="text-foreground/50 text-sm">Automated layering suggestions. Never get caught in a sudden rain shower or overheat during your commute again.</p>
+            <p className="text-foreground/50 text-base">Automated layering suggestions. Never get caught in a sudden rain shower or overheat during your commute again.</p>
           </div>
 
           <div className="bg-white border border-foreground/5 rounded-[2.5rem] p-4 py-8  md:p-8 shadow-sm">
@@ -190,34 +209,46 @@ const StyleMeAIVision = () => {
               <Calendar className="text-primary" size={24} />
             </div>
             <h4 className="text-xl font-bold mb-2">Event Sync</h4>
-            <p className="text-foreground/50 text-sm">Synchronize with your calendar. Get outfit prep notifications for high-stakes board meetings, date nights, or weekend getaways.</p>
+            <p className="text-foreground/50 text-base">Synchronize with your calendar. Get outfit prep notifications for high-stakes board meetings, date nights, or weekend getaways.</p>
           </div>
         </div>
       </section>
 
-      {/* 3. Social Proof & Final CTA */}
-      <section className="bg-secondary text-secondary-foreground py-24 px-6 text-center">
-        <div className="flex justify-center -space-x-3 mb-8">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="relative w-12 h-12 rounded-full border-4 border-secondary overflow-hidden">
-              <Image src={`/image/Rectangle 7.png`} alt="user" fill className="object-cover" />
-            </div>
-          ))}
-          <div className="w-12 h-12 rounded-full border-4 border-secondary bg-primary flex items-center justify-center text-[10px] font-bold text-primary-foreground">
-            +10k
-          </div>
-        </div>
+    {/* 3. Social Proof & Final CTA */}
+<section className="bg-slate-950 text-white py-32 px-6 text-center ">
+  <div className="flex justify-center -space-x-3 mb-10">
+    {[
+      "https://i.pinimg.com/736x/92/24/eb/9224eb869902b64ca066f5b62b682e2f.jpg",
+      "https://i.pinimg.com/736x/b0/c0/c7/b0c0c7fdb34bc1493bb102549817f104.jpg",
+      "https://i.pinimg.com/736x/ce/49/39/ce4939e9d698ecc881e50241a83a2fb9.jpg"
+    ].map((src, i) => (
+      <div key={i} className="relative w-14 h-14 rounded-full border-4 border-slate-950 overflow-hidden shadow-xl hover:-translate-y-1 transition-transform duration-300">
+        <Image src={src} alt="Community member" fill className="object-cover" />
+      </div>
+    ))}
+    <div className="w-14 h-14 rounded-full border-4 border-slate-950 bg-primary flex items-center justify-center text-[10px] font-black text-primary-foreground shadow-xl z-10">
+      +10K
+    </div>
+  </div>
 
-        <h2 className="text-3xl font-bold mb-4">Loved by Fashionistas</h2>
-        <p className="text-secondary-foreground/60 mb-12 max-w-md mx-auto">
-          Experience the marketplace where human expertise meets AI.
-        </p>
-        <Link href="/waitlist">
-          <button className="bg-primary text-primary-foreground  font-bold px-12 py-5 rounded-2xl flex items-center justify-center gap-2 mx-auto shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
-            Try it now <ArrowRight size={20} />
-          </button>
-        </Link>
-      </section>
+  <h2 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat tracking-tight">
+    Loved by <span className="text-primary italic">Forward</span> Fashionistas
+  </h2>
+  
+  <p className="text-white/50 mb-12 max-w-lg mx-auto leading-relaxed text-lg">
+    Join the ecosystem where human creativity meets AI precision. Snap your wardrobe, search the world, and style with the pros.
+  </p>
+
+  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+    <Link href="/waitlist" className="w-full sm:w-auto">
+      <button className="bg-primary text-primary-foreground font-bold px-12 py-6 rounded-2xl flex items-center justify-center gap-3 w-full shadow-2xl shadow-primary/30 hover:bg-primary/90 hover:scale-[1.05] active:scale-95 transition-all duration-300 group">
+        GET STARTED <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform" />
+      </button>
+    </Link>
+    
+    
+  </div>
+</section>
     </div>
   );
 };
