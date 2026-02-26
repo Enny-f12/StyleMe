@@ -82,10 +82,10 @@ export default function ExpertiseSection() {
       >
         <motion.h2 
           variants={fadeInUp}
-          className="text-3xl md:text-4xl lg:text-6xl font-syne mb-6 md:mb-8 leading-tight text-[#231E0F]"
+          className="text-3xl md:text-4xl lg:text-6xl mb-6 md:mb-8 leading-tight text-[#231E0F]"
         >
           Human Expertise meets <br className="hidden md:block" />
-          <span className="text-primary italic md:not-italic">Artificial Intelligence</span>
+          <span className="text-primary italic ">Artificial Intelligence</span>
         </motion.h2>
         
         <motion.p 

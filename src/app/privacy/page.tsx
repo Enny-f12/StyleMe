@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
 
         <div className="space-y-12">
           {sections.map((section, idx) => (
-            <section key={idx} className="bg-white p-8 rounded-[2.5rem] border border-foreground/5 shadow-sm">
+            <section key={idx} className="bg-white p-8  rounded-[2.5rem] border border-foreground/5 shadow-sm">
               <div className="text-primary mb-4">{section.icon}</div>
               <h2 className="text-2xl font-bold mb-4 font-montserrat">{section.title}</h2>
               <p className="text-foreground/60 leading-relaxed">{section.content}</p>

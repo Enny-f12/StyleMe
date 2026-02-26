@@ -43,7 +43,7 @@ const Navbar = () => {
                  </div>
               </div>
             </div>
-            <span className="font-syne text-2xl tracking-tight text-secondary-foreground">
+            <span className="font-montserrat text-2xl tracking-tight text-secondary-foreground">
               StyleMe
             </span>
           </Link>
@@ -54,13 +54,13 @@ const Navbar = () => {
               <Link 
                 key={item.name} 
                 href={item.href}
-                className="text-[10px] uppercase font-syne tracking-[0.25em] font-bold text-secondary-foreground hover:text-primary transition-colors"
+                className="text-[10px] uppercase font-montserrat tracking-[0.25em] font-bold text-secondary-foreground hover:text-primary transition-colors"
               >
                 {item.name}
               </Link>
             ))}
             <Link href="/waitlist">
-              <Button variant="primary" className="py-2.5 px-8 text-[12px]! tracking-widest! font-bold text-[#854D0E]!">
+              <Button variant="primary" className="uppercase py-2.5 px-8 text-[12px]! tracking-widest! font-bold text-[#854D0E]!">
                 Get Started
               </Button>
             </Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
                   key={item.name} 
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)} // Close menu on click
-                  className="text-xs uppercase font-syne tracking-[0.3em] font-bold text-secondary-foreground hover:text-primary"
+                  className="text-xs uppercase font-montserrat tracking-[0.3em] font-bold text-secondary-foreground hover:text-primary"
                 >
                   {item.name}
                 </Link>

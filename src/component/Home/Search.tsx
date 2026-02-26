@@ -54,7 +54,7 @@ export default function SearchSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl lg:text-5xl font-syne leading-tight text-secondary">
+          <h2 className="text-4xl lg:text-5xl leading-tight text-secondary">
             Can&apos;t Snap? <span className="text-primary italic">Search</span>
           </h2>
           <p className="text-muted-foreground max-w-xl leading-relaxed text-sm md:text-base">
@@ -105,7 +105,7 @@ export default function SearchSection() {
             </div>
 
             {/* Text Content */}
-            <h3 className="text-xl font-syne mb-3 group-hover:text-primary transition-colors text-secondary">
+            <h3 className="text-xl mb-3 group-hover:text-primary transition-colors text-secondary">
               {feature.title}
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">

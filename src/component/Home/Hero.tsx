@@ -37,7 +37,7 @@ const Hero = () => {
                 </motion.div>
 
                 {/* Hero Text: Dynamic font sizes */}
-                <motion.h1 variants={fadeInUp} className="text-4xl md:text-5xl lg:text-7xl font-syne leading-[1.1] max-w-150 mx-auto lg:mx-0 text-secondary">
+                <motion.h1 variants={fadeInUp} className="text-4xl md:text-5xl lg:text-7xl  leading-[1.1] max-w-150 mx-auto lg:mx-0 text-secondary">
                     Your Entire Wardrobe, <br />
                     <span className="text-primary italic">Digitized</span> in 60 Seconds
                 </motion.h1>

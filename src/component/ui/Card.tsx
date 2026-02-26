@@ -30,7 +30,7 @@ const FeatureCard = ({ title, description, icon: Icon, isDark = false }: Feature
 
       {/* Content Area */}
       <div className="mt-auto space-y-5">
-        <h3 className="font-syne text-2xl lg:text-3xl tracking-tight leading-tight">
+        <h3 className=" text-2xl lg:text-3xl tracking-tight leading-tight">
           {title}
         </h3>
         <p className="font-inter text-base lg:text-lg opacity-70 leading-relaxed font-light max-w-75">

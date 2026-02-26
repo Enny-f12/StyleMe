@@ -32,7 +32,7 @@ const StyleMeLanding = () => {
           {/* Glassmorphism Overlay Card */}
           <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 px-3 py-2 md:p-6 rounded-2xl flex justify-between items-center">
             <div>
-              <p className=" text-[5px] md:text-[10px] uppercase tracking-[0.2em] text-white/60 font-bold mb-1">Your Collection</p>
+              <p className=" text-[5px] md:text-[10px] uppercase tracking-[0.2em] text-white/60 font-bold mb-1 text-left">Your Collection</p>
               <h3 className=" text-base md:text-xl text-white font-semibold">Summer Essentials</h3>
             </div>
             <div className="bg-primary p-2 rounded-full">

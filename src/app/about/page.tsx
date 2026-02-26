@@ -105,7 +105,7 @@ const StyleMeProblemSolution = () => {
       {/* 5. Final CTA */}
       <section className="py-16 md:py-24 px-6 text-center bg-white/50 border-t border-foreground/5">
         <h3 className="text-4xl font-bold mb-4">Ready to Digitize?</h3>
-        <p className="text-foreground/50 mb-12">We&apos;ve built the engine to turn this chaos into <br /> a curated, digital experience in under 60 seconds.</p>
+        <p className="text-foreground/50 mb-12 max-w-md mx-auto">We&apos;ve built the engine to turn this chaos into  a curated, digital experience in under 60 seconds.</p>
         
         <div className="flex flex-col gap-4 max-w-sm mx-auto">
           <button className="bg-primary text-primary-foreground font-bold py-5 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-primary/20">

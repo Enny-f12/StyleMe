@@ -23,8 +23,7 @@ const StyleMeAIVision = () => {
         </p>
       </section>
 
-      <h2 className='text-foreground text-2xl md:text-3xl mx-auto mb-10 text-center'>Let&#39;s dive in to our amazing features<ArrowBigDown size={24} className="mt-4  mx-auto" /></h2>
-
+      
       {/* 2. Feature Cards Grid */}
       <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-6xl mx-auto space-y-6">
 

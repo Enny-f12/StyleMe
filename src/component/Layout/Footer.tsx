@@ -20,7 +20,7 @@ const Footer = () => {
                  <div className="w-1 h-1 bg-primary rotate-45" />
                </div>
             </div>
-            <span className="font-syne text-2xl tracking-tight font-bold">StyleMe</span>
+            <span className="font-montserrat text-2xl tracking-tight font-bold">StyleMe</span>
           </Link>
           <p className="text-base opacity-60 leading-relaxed max-w-xs">
             The AI-powered wardrobe consultant helping you digitize, organize, and elevate your personal style in seconds.
@@ -34,7 +34,7 @@ const Footer = () => {
 
         {/* Links Columns - Using Syne for Headers */}
         <div>
-          <h4 className="font-syne text-lg mb-8  tracking-wider">Product</h4>
+          <h4 className="font-montserrat text-lg mb-8  tracking-wider">Product</h4>
           <ul className="space-y-4 text-base font-montserrat opacity-60 ">
             <li><Link href="/how-it-works" className="hover:text-primary transition-colors">How it Works</Link></li>
             <li><Link href="/feature" className="hover:text-primary transition-colors">Features</Link></li>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-syne text-lg mb-8  tracking-wider">Company</h4>
+          <h4 className="font-montserrat text-lg mb-8  tracking-wider">Company</h4>
           <ul className="space-y-4 text-base font-montserrat opacity-60  ">
             <li><Link href="/about" className="hover:text-primary transition-colors">About StyleMe</Link></li>
             <li><Link href="/coming-soon" className="hover:text-primary transition-colors">Careers</Link></li>
@@ -55,7 +55,7 @@ const Footer = () => {
 
         {/* Newsletter Section */}
         <div className="space-y-8">
-          <h4 className="font-syne text-lg uppercase tracking-wider text-primary">Stay in Style</h4>
+          <h4 className="font-montserrat text-lg uppercase tracking-wider text-primary">Stay in Style</h4>
           <p className="text-base opacity-60 leading-relaxed">Get curation tips and product updates directly in your inbox.</p>
           <div className="flex flex-col gap-3">
             <input 

@@ -39,7 +39,7 @@ const OutfitSection = () => {
                     <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
                         AI Styling Engine
                     </span>
-                    <h2 className="text-4xl lg:text-6xl font-syne mt-4 text-secondary-foreground">
+                    <h2 className="text-4xl lg:text-6xl font-bold mt-4 text-secondary-foreground">
                         Outfits for Every Occasion
                     </h2>
                     <p className="mt-4 text-sm md:text-base opacity-70 leading-relaxed text-white font-inter">
