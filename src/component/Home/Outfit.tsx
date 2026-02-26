@@ -48,7 +48,7 @@ const OutfitSection = () => {
                 </motion.div>
 
                 {/* Row 1 / Card 1 */}
-                <motion.div variants={itemVariants} className="p-0 md:p-8 h-full">
+                <motion.div variants={itemVariants} className="p-0 md:p-8 h-120">
                     <FeatureCard
                         isDark
                         icon={Smile}
@@ -60,16 +60,16 @@ const OutfitSection = () => {
                 {/* Image 1 */}
                 <motion.div variants={itemVariants} className="overflow-hidden rounded-sm group shadow-md">
                     <Image
-                        src="/image/Rectangle 7.png"
+                        src="https://i.pinimg.com/736x/51/20/ea/5120eaa08a00499bc1c5c11ee91c6b0a.jpg"
                         alt="Weather Outfit"
                         width={600}
                         height={500}
-                        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-120 object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                 </motion.div>
 
                 {/* Row 2 / Card 2 */}
-                <motion.div variants={itemVariants} className="p-0 md:p-8 h-full">
+                <motion.div variants={itemVariants} className="p-0 md:p-8 h-120">
                     <FeatureCard
                         isDark
                         icon={CloudRain}
@@ -81,16 +81,16 @@ const OutfitSection = () => {
                 {/* Image 2 */}
                 <motion.div variants={itemVariants} className="overflow-hidden rounded-sm group shadow-md">
                     <Image
-                        src="/image/Rectangle 6.png"
+                        src="https://i.pinimg.com/736x/88/69/50/8869501c68f51afed6127609ce548a4e.jpg"
                         alt="Weather Outfit"
                         width={600}
                         height={500}
-                        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-120 object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                 </motion.div>
 
                 {/* Row 2 / Card 3 */}
-                <motion.div variants={itemVariants} className="p-0 md:p-8 h-full">
+                <motion.div variants={itemVariants} className="p-0 md:p-8 h-120">
                     <FeatureCard
                         isDark
                         icon={Calendar}

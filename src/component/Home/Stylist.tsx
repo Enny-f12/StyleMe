@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import Button from '../ui/Button';
-
+import Link from 'next/link';
 const stylists = [
   { id: 1, src: '/image/Ellipse 5 (1).png', alt: 'Expert Stylist 1' },
   { id: 2, src: '/image/Ellipse 7.png', alt: 'Expert Stylist 2' },
@@ -96,13 +96,16 @@ export default function ExpertiseSection() {
           personalized curation, and seasonal shopping lists.
         </motion.p>
 
+
         <motion.div variants={fadeInUp}>
+          <Link href="/waitlist">
           <Button 
             variant="primary" 
             className="mx-auto px-8 md:px-12 py-4 md:py-5 font-montserrat text-[#854D0E]! font-bold tracking-widest md:tracking-[0.2em] w-full sm:w-auto"
           >
             Access Pro Stylist
           </Button>
+          </Link>
         </motion.div>
       </motion.div>
     </section>

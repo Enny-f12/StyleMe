@@ -19,8 +19,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'How it Works', href: '#how-it-works' },
-    { name: 'For Stylist', href: '#for-stylist' },
+    { name: 'Features', href: '/feature' },
+    { name: 'How it Works', href: '/how-it-works' },
+    { name: 'For Stylist', href: '/for-stylist' },
   ];
 
   return (
@@ -57,10 +58,11 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            
-            <Button variant="primary" className="py-2.5 px-8 text-[12px]! tracking-widest! font-bold text-[#854D0E]!">
-              Get Started
-            </Button>
+            <Link href="/waitlist">
+              <Button variant="primary" className="py-2.5 px-8 text-[12px]! tracking-widest! font-bold text-[#854D0E]!">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Toggle Button */}
@@ -92,6 +94,7 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
+              <Link href="/waitlist" onClick={() => setIsMenuOpen(false)}>
               <Button 
                 variant="primary" 
                 className="py-4 px-10 text-[12px]! w-[80%] text-[#854D0E]!"
@@ -99,6 +102,7 @@ const Navbar = () => {
               >
                 Get Started
               </Button>
+              </Link>
             </motion.div>
           )}
         </AnimatePresence>

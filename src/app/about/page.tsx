@@ -6,7 +6,7 @@ const StyleMeProblemSolution = () => {
   return (
     <div className="flex flex-col bg-background">
       {/* 1. Problem Introduction Section */}
-      <section className="px-6 py-16 md:px-12 lg:px-24 flex gap-6 max-w-6xl mx-auto">
+      <section className="px-6 py-16 md:px-12 lg:px-24 mt-20 flex gap-6 max-w-6xl mx-auto">
         <div>
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary-foreground px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-8 border border-primary/20">
           <span>✨ The Wardrobe Dilemma</span>
@@ -16,9 +16,9 @@ const StyleMeProblemSolution = () => {
           Your Closet is <span className="italic font-light">Full</span>, Yet You Have <span className="text-primary underline decoration-2 underline-offset-8">Nothing</span> to Wear.
         </h2>
 
-        <p className="text-xl text-foreground/60 leading-relaxed mb-12 max-w-2xl">
+        <p className="text-xl text-foreground/60 leading-relaxed mb-12 max-w-3xl">
           The modern professional spends over 15 minutes a day deciding what to wear. 
-          That&apos;s 91 hours a year lost to decision fatigue and &quot;closet paralysis.&quot;
+          That is 91 hours a year lost to decision fatigue and &quot;closet paralysis.&quot;
         </p>
       </div>
         {/* Testimonial Image Card */}
@@ -54,14 +54,14 @@ const StyleMeProblemSolution = () => {
           <span className="text-primary">Cluttered Living</span>
         </h3>
 
-        <div className="grid gap-20 max-w-4xl mx-auto">
+        <div className="grid grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             { label: "30%", title: "Inventory Ignorance", desc: "Most people only wear 30% of what they own regularly. The rest is literally gathering dust and wasting capital." },
             { label: "15m", title: "Decision Fatigue", desc: "Every morning spent searching for an outfit depletes your cognitive energy before your workday even begins." },
-            { label: "Zero", title: "Digital Connection", desc: "Your wardrobe is one of the last analog parts of your life. It&apos;s disconnected from your calendar, the weather, and your style goals." }
+            { label: "Zero", title: "Digital Connection", desc: "Your wardrobe is one of the last analog parts of your life. It is disconnected from your calendar, the weather, and your style goals." }
           ].map((stat, i) => (
             <div key={i} className="flex flex-col items-center">
-              <span className="text-6xl md:text-8xl font-bold text-primary/20 mb-4">{stat.label}</span>
+              <span className="text-6xl md:text-8xl font-bold text-primary/40 mb-4">{stat.label}</span>
               <h4 className="text-xl font-bold mb-4">{stat.title}</h4>
               <p className="text-secondary-foreground/60 max-w-md leading-relaxed">{stat.desc}</p>
             </div>
@@ -70,10 +70,10 @@ const StyleMeProblemSolution = () => {
       </section>
 
       {/* 3. Pain Points List */}
-      <section className="py-24 px-6 md:px-12 lg:px-24 max-w-4xl mx-auto">
-        <h3 className="text-3xl font-bold mb-16">Why &quot;Good Enough&quot; <br />Isn&apos;t Good Enough</h3>
+      <section className="py-24 px-6 md:px-12 lg:px-12 max-w-6xl mx-auto">
+        <h3 className="text-3xl lg:text-4xl font-bold mb-16 text-center">Why &quot;Good Enough&quot; <br />Isn&apos;t Good Enough</h3>
         
-        <div className="space-y-16">
+        <div className=" grid grid-cols-2 gap-20">
           {[
             { h: "The Fog of Choice", p: "Browsing a physical closet is inefficient. You can't filter by color, you can't search by material, and you certainly can't see how things look together without the hassle of trying them on." },
             { h: "Disconnected Data", p: "Your closet doesn't know you have a board meeting at 9 AM or that it's going to rain at 2 PM. You're left to bridge that gap manually every single day." },
@@ -90,14 +90,14 @@ const StyleMeProblemSolution = () => {
 
       {/* 4. Visual Grid */}
       <section className="px-6 md:px-12 lg:px-24 mb-32">
-        <div className="grid grid-cols-2 gap-4 h-150">
+        <div className="grid grid-cols-2 gap-4 h-150 ">
           <div className="grid gap-4 relative">
-             <div className="relative w-full h-full"><Image src="/image/Rectangle 6.png" fill className="object-cover rounded-3xl" alt="closet detail" /></div>
+             <div className="relative w-full h-full rounded-2xl"><Image src="/image/Rectangle 6.png" fill className="object-cover rounded-3xl" alt="closet detail" /></div>
              <div className="relative w-full h-full"><Image src="/image/Rectangle 7.png" fill className="object-cover rounded-3xl" alt="outfit shot" /></div>
           </div>
           <div className="grid gap-4 relative">
-             <div className="relative w-full h-full"><Image src="/image/Rectangle 7.png" fill className="object-cover rounded-3xl" alt="texture detail" /></div>
-             <div className="relative w-full h-full"><Image src="/image/Rectangle 7.png" fill className="object-cover rounded-3xl" alt="interior design" /></div>
+             <div className="relative w-full h-full "><Image src="/image/Rectangle 7.png" fill className="object-cover rounded-3xl" alt="texture detail" /></div>
+             <div className="relative w-full h-full "><Image src="/image/Rectangle 7.png" fill className="object-cover rounded-3xl" alt="interior design" /></div>
           </div>
         </div>
       </section>

@@ -6,6 +6,7 @@ import { motion, Variants } from 'framer-motion';
 import { ArrowRight, LucideSparkle, PlayCircle } from 'lucide-react';
 import Button from '../ui/Button';
 import GlassCard from '../ui/GlassCard';
+import Link from 'next/link';
 
 const Hero = () => {
     const fadeInUp: Variants = {
@@ -19,9 +20,9 @@ const Hero = () => {
 
     return (
         <section className=" relative w-full min-h-[90vh] flex flex-col lg:flex-row items-center justify-between mt-10 lg:mt-30 px-6 lg:px-20 py-12 lg:py-0 gap-12 bg-background overflow-hidden">
-            
+
             {/* Left Content: Centered on mobile, Left-aligned on Desktop */}
-            <motion.div 
+            <motion.div
                 className="flex-1 space-y-6 md:space-y-8 z-10 text-center lg:text-left mt-10 lg:mt-0"
                 initial="hidden"
                 animate="visible"
@@ -48,9 +49,14 @@ const Hero = () => {
 
                 {/* Buttons: Stacked on tiny screens, Row on tablet+ */}
                 <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                    <Button variant="primary" className="group text-[#854D0E]! w-full sm:w-auto">
-                        Start Your Closet <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                    <Link href="/waitlist">
+                        <Button variant="primary" className="group relative text-![#854D0E] w-full sm:w-auto inline-flex flex-row items-center justify-center gap-2">
+
+                            Start Your Closet <ArrowRight size={18} className="ml-2 transition-transform duration-200 group-hover:translate-x-1" />
+
+                        </Button>
+                    </Link>
+
                     <Button variant="secondary" className="w-full sm:w-auto">
                         Watch Demo <PlayCircle size={18} />
                     </Button>
@@ -58,7 +64,7 @@ const Hero = () => {
             </motion.div>
 
             {/* Right Image: Perfectly Scaled */}
-            <motion.div 
+            <motion.div
                 className="flex-1 relative group w-full max-w-125 lg:max-w-150"
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -66,7 +72,7 @@ const Hero = () => {
             >
                 <div className="relative w-full aspect-4/5 lg:aspect-square overflow-hidden rounded-sm shadow-2xl">
                     <Image
-                        src="/image/Rectangle 1 (1).png"
+                        src="https://i.pinimg.com/736x/fa/65/7c/fa657c26852b652b896e245a2d278a82.jpg"
                         alt="Wardrobe Selection"
                         fill
                         priority
@@ -76,13 +82,13 @@ const Hero = () => {
                 </div>
 
                 {/* Glass Card: Adjusted position for mobile */}
-                <motion.div 
+                <motion.div
                     className="absolute -bottom-4 md:bottom-8 -left-2 md:-left-8 lg:-left-12 right-6 md:right-12"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.2, duration: 0.8 }}
                 >
-                    <GlassCard label="Linen Shirts" imageSrc="/image/Rectangle 1.png" />
+                    <GlassCard label="Linen Shirts" imageSrc="https://i.pinimg.com/1200x/72/d0/5a/72d05a5540614aad95644ffcdac1039f.jpg" />
                 </motion.div>
             </motion.div>
         </section>

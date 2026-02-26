@@ -36,20 +36,20 @@ const Footer = () => {
         <div>
           <h4 className="font-syne text-lg mb-8  tracking-wider">Product</h4>
           <ul className="space-y-4 text-base font-montserrat opacity-60 ">
-            <li><Link href="#" className="hover:text-primary transition-colors">How it Works</Link></li>
-            <li><Link href="#" className="hover:text-primary transition-colors">Features</Link></li>
-            <li><Link href="#" className="hover:text-primary transition-colors">Marketplace</Link></li>
-            <li><Link href="#" className="hover:text-primary transition-colors">Pricing</Link></li>
+            <li><Link href="/how-it-works" className="hover:text-primary transition-colors">How it Works</Link></li>
+            <li><Link href="/feature" className="hover:text-primary transition-colors">Features</Link></li>
+            <li><Link href="/coming-soon" className="hover:text-primary transition-colors">Marketplace</Link></li>
+            <li><Link href="/coming-soon" className="hover:text-primary transition-colors">Pricing</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-syne text-lg mb-8  tracking-wider">Company</h4>
           <ul className="space-y-4 text-base font-montserrat opacity-60  ">
-            <li><Link href="#" className="hover:text-primary transition-colors">About Us</Link></li>
-            <li><Link href="#" className="hover:text-primary transition-colors">Careers</Link></li>
-            <li><Link href="#" className="hover:text-primary transition-colors">Blog</Link></li>
-            <li><Link href="#" className="hover:text-primary transition-colors">Contact</Link></li>
+            <li><Link href="/about" className="hover:text-primary transition-colors">About StyleMe</Link></li>
+            <li><Link href="/coming-soon" className="hover:text-primary transition-colors">Careers</Link></li>
+            <li><Link href="/coming-soon" className="hover:text-primary transition-colors">Blog</Link></li>
+            <li><Link href="/coming-soon" className="hover:text-primary transition-colors">Contact</Link></li>
           </ul>
         </div>
 
