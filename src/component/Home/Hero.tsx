@@ -56,10 +56,11 @@ const Hero = () => {
 
                         </Button>
                     </Link>
-
-                    <Button variant="secondary" className="w-full sm:w-auto">
-                        Watch Demo <PlayCircle size={18} />
-                    </Button>
+                     <Link href="/features">
+                        <Button variant="secondary" className="w-full sm:w-auto">
+                            View Features <PlayCircle size={18} />
+                        </Button>
+                    </Link>
                 </motion.div>
             </motion.div>
 
