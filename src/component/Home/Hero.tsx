@@ -56,7 +56,7 @@ const Hero = () => {
 
                         </Button>
                     </Link>
-                     <Link href="/features">
+                     <Link href="/feature">
                         <Button variant="secondary" className="w-full sm:w-auto">
                             View Features <PlayCircle size={18} />
                         </Button>

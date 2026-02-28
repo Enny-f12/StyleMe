@@ -49,9 +49,9 @@ const StyleMeLanding = () => {
             <input
               type="email"
               placeholder="Enter your email address"
-              className=" w-full md:w-3/4 px-6 py-4 rounded-xl border border-foreground/10 bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              className=" w-full  lg:w-3/4 px-6 py-4 rounded-xl border border-foreground/10 bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
             />
-            <button className="w-full md:w-1/4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-transform active:scale-95">
+            <button className="w-full lg:w-1/4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-transform active:scale-95">
               Get Early Access <ArrowRight size={20} />
             </button>
           </div>

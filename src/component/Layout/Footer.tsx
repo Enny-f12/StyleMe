@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="  bg-secondary text-secondary-foreground pt-24 pb-12 px-6 lg:px-20 border-t border-white/5 font-sans">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
         
         {/* Brand Column */}
         <div className="md:col-span-1 space-y-8">
